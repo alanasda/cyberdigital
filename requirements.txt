@@ -1,4 +1,6 @@
+
 flask
-flask-cors
+gunicorn  # Recomendado para produção
 yagmail
 supabase
+python-dotenv  # Para variáveis de ambiente (opcional)

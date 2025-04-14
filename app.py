@@ -119,6 +119,6 @@ def webhook_envio(modulo_id):
 @app.route("/", methods=["GET"])
 def home():
     return "API da CYBER.DIGITAL está ativa ✅"
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Usa a porta do Render ou 10000 como fallback
+    app.run(host="0.0.0.0", port=port)

@@ -1,6 +1,6 @@
-
-flask
-gunicorn  # Recomendado para produção
-yagmail
-supabase
-python-dotenv  # Para variáveis de ambiente (opcional)
+flask==3.1.0
+flask-cors==4.0.0  # <-- Adicione esta linha
+gunicorn==23.0.0
+yagmail==0.15.293
+supabase==2.15.0
+python-dotenv==1.1.0
